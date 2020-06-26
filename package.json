@@ -24,7 +24,7 @@
     "debug": "nodemon --inspect=0.0.0.0:9229 src/server.js",
     "start": "npm-run-all -p nodemon browsersync",
     "nodemon": "nodemon src/server.js",
-    "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'scss, public ,src/views' "
+    "browsersync": "browser-sync start --proxy http://localhost:5005 --files 'scss, public ,src/views' "
   },
   "keywords": [],
   "author": "",
