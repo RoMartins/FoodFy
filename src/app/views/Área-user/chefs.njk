@@ -1,0 +1,19 @@
+{% extends "Área-user/layout.njk" %}
+
+{% block content %}
+    <div class="space"></div>
+   <section class="sessão5">
+        {% for chef in chefs %}
+             <div class="rec2">
+                <img src="{{chef.src}}" alt="{{chef.nome_chef}}">
+                <div class="cheflist">
+                    <h5>{{chef.nome_chef}}</h5>
+                    <p>{{chef.totalrec}} receitas</p>
+                    
+
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+
+{% endblock %}

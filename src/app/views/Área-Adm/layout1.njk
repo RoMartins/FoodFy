@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foodfy</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/style.css">
+
+    </head>
+
+    <body>
+
+        
+        <div class="MenuAdm">
+            <div>
+                <a href="/"><img class="logo2" src="/logo2.png"></a>
+            </div>
+
+            <div class="linkAdm">
+                <a  href="/admin/recipes">RECEITAS</a>
+                <a href="/admin/chefs">CHEF</a>
+
+                {% if  session.adm == true %}
+                <a  href="/admin/users">USUÁRIOS</a>
+                {% endif %}
+                <a  href="/admin/profile">PERFIL</a>
+
+            </div>
+
+            <div class="exit">
+                <form action="/logout" method="post">
+                    <button>SAIR</button>
+                </form>
+            </div>
+        </div>
+
+        <section>
+        {%include "parts/messages.njk"%}
+
+        {% block content %}{% endblock content %}
+        </section>
+    </body>
+    <script> 
+    const FormDelete = document.querySelector("#formdeletee")
+    FormDelete.addEventListener("submit", (event) =>{
+        const confirmation = confirm("Deseja Deletar ?")
+        if(!confirmation) {
+        event.preventDefault()
+        }
+    })
+</script>
+    <script src="/scripts.js"></script>
+
+    
+</html>
+
+    

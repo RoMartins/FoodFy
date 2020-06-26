@@ -1,0 +1,58 @@
+
+.MenuAdm{
+    background-color: black;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 371px 371PX 1fr;
+
+    div:nth-child(1){
+        display: flex;
+        align-items: center;
+        margin-left: 215px;
+
+    }
+    .linkAdm{
+        @include flexCenter(row);    
+        justify-content: space-evenly;
+    }
+    .exit{
+        @include flexCenter(row);    
+        justify-content: flex-end;
+        margin-right: 50px;
+
+        form{
+            button{
+                background-color: black;
+                font-size: 16px;
+                font-family: 'Roboto', sans-serif;
+                color: white;
+                
+                &:hover{
+                    color: #6558C3;
+                    font-weight: bold;
+                
+                }
+            }
+        }
+    }
+
+}
+
+
+.linkAdm a {
+    text-decoration: initial;
+    font-size: 16px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+.linkAdm a:hover{
+    color: #6558C3;
+    font-weight: bold;
+}
+
+.linkAdm .selected {
+    color: #6558C3 ;
+    font-weight: bold;
+}

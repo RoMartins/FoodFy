@@ -1,0 +1,37 @@
+
+<section class="sessão4">
+
+ <div class="FormPhotos">
+        <div>Adicione Fotos</div>
+        <div class="gallery-form">
+            <div id="photos-upload">
+                <input onchange="PhotosUpload.PhotosInputChef(event)" id="photos-input" type="file" name="photos" multiple="multiple" accept="image/*" >
+                <p class="P_foto">
+                    +
+                </p>
+            </div>
+
+            <div id="photos-preview">
+                {% if avatar %}
+                    {% for image in avatar %}
+                        <div class="photo" id="{{image.id}}">
+                            <img src="{{image.src}}" alt="{{image.name}}">
+                            <i class="material-icons" onclick="PhotosUpload.removeOldPhoto(event)">close</i>
+                        </div>
+                    {% endfor %}
+                    <input type="hidden" name="removed_files">
+                {% endif %}
+
+            </div>
+
+        </div>
+    </div>
+
+<div class="nmChef">
+    <div>Nome</div>
+    <div>
+        <input class="inptChef"type="text" name="nome" value="{{chef.nome_chef}}">
+    </div>
+</div>
+</section>
+

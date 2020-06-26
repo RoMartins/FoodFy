@@ -1,0 +1,1380 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,700i&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  list-style-type: none;
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+p {
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  padding: 0;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+section {
+  font-family: Helvetica;
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+section.profile .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 55px 0 55px 0;
+}
+
+section.profile .home div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-weight: 700;
+  font-size: 2.4em;
+}
+
+section.profile .home h2 {
+  font-size: 1.2em;
+  margin-left: 8px;
+  text-transform: uppercase;
+  color: #6558C3;
+}
+
+section.profile .home button {
+  margin-left: auto;
+  width: 140px;
+  height: 37px;
+  padding: 4px;
+  background-color: #6558C3;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+
+section.profile .form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+section.profile .form .item .inputPRO input {
+  height: 49px;
+}
+
+section.profile .form .check .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.profile .form .check .checkbox div:nth-child(2) {
+  font-size: 1.6em;
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 0 0;
+}
+
+.checkbox input {
+  height: 16px;
+  width: 30px;
+}
+
+.checkbox div:nth-child(2) {
+  font-size: 1.6em;
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+.logoLogin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 35px 0 120px 0;
+}
+
+.LoginForm {
+  max-width: 500px;
+}
+
+.LoginForm h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.4em;
+}
+
+.LoginForm .form2 {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.LoginForm .form2 button {
+  margin-left: auto;
+  width: 140px;
+  height: 37px;
+  padding: 4px;
+  background-color: #6558C3;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+
+.LoginForm .form2 button:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+.LoginForm .form2 a {
+  text-decoration: none;
+  font-size: 1.6em;
+  color: #969696;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.LoginForm .form2 a:hover {
+  color: #96969685;
+}
+
+.LoginForm .access {
+  background-color: #a8a4a4;
+  margin: 30vh auto;
+  width: 300px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 2px 2px 2px -3px rgba(63, 63, 63, 0.9);
+          box-shadow: 2px 2px 2px -3px rgba(63, 63, 63, 0.9);
+  border: 1px solid #efefef;
+  border-radius: 4px;
+}
+
+.HeaderList {
+  margin: 0 auto;
+  max-width: 940px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 0 30px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.HeaderList h1 {
+  font-size: 2.4em;
+}
+
+.HeaderList button {
+  margin-left: auto;
+  width: 140px;
+  height: 37px;
+  padding: 4px;
+  background-color: #6558C3;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+
+.HeaderList button.rec a {
+  padding: 5px 13px;
+  margin-right: 35px;
+}
+
+.HeaderList button.exit {
+  background-color: #7777;
+}
+
+.HeaderList button.exit a {
+  padding: 10px 36px;
+}
+
+.HeaderList button a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 47px;
+}
+
+.HeaderList button a.exit {
+  color: #7777;
+}
+
+.list {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px 25px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.list .item div:nth-child(1) {
+  font-weight: 700;
+}
+
+.list .item div:nth-child(2) {
+  font-size: 1.4em;
+  color: #777777;
+}
+
+.list .item .links {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 110px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.list .item .links button.remove {
+  background-color: white;
+  color: red;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.list .item .links a {
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.list .item .links a.editar {
+  color: #6558C3;
+}
+
+.listRec {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 40px 150px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 35px;
+}
+
+.listChef {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 45px 30px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@-webkit-keyframes hideMessage {
+  to {
+    text-outline: -50px;
+    opacity: 0;
+  }
+}
+
+@keyframes hideMessage {
+  to {
+    text-outline: -50px;
+    opacity: 0;
+  }
+}
+
+.messages {
+  width: 344px;
+  height: 135px;
+  color: white;
+  font-size: 2.4em;
+  font-weight: 700;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  opacity: 1;
+  -webkit-animation: hideMessage 400ms 3s ease-out forwards;
+          animation: hideMessage 400ms 3s ease-out forwards;
+}
+
+.messages.error {
+  background-color: red;
+  text-align: center;
+}
+
+.messages.success {
+  background-color: greenyellow;
+  text-align: center;
+}
+
+.sessão1 {
+  width: 940px;
+  height: 366px;
+  margin: 20PX auto;
+  background-color: #FBDFDB;
+  border-radius: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 624px 1fr;
+      grid-template-columns: 624px 1fr;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+.sessão1 div:nth-child(1) {
+  margin: 117px 0 0 60px;
+}
+
+.sessão1 div:nth-child(2) {
+  margin-top: 66px;
+}
+
+.sessão1 h1 {
+  font-size: 3.6em;
+  margin-bottom: 10px;
+}
+
+.sessão1 p {
+  font-size: 1.6em;
+  max-width: 316px;
+  opacity: 0.7;
+  letter-spacing: 0.7px;
+}
+
+.MenuAdm {
+  background-color: black;
+  height: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 371px 371PX 1fr;
+      grid-template-columns: 371px 371PX 1fr;
+}
+
+.MenuAdm div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 215px;
+}
+
+.MenuAdm .linkAdm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.MenuAdm .exit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.MenuAdm .exit form button {
+  background-color: black;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.MenuAdm .exit form button:hover {
+  color: #6558C3;
+  font-weight: bold;
+}
+
+.linkAdm a {
+  text-decoration: initial;
+  font-size: 16px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+.linkAdm a:hover {
+  color: #6558C3;
+  font-weight: bold;
+}
+
+.linkAdm .selected {
+  color: #6558C3;
+  font-weight: bold;
+}
+
+.menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 351px 1fr;
+      grid-template-columns: 1fr 2fr 351px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .link {
+  text-decoration: initial;
+  word-spacing: 30px;
+}
+
+.menu .link a {
+  text-decoration: initial;
+  font-size: 16px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+.menu .link a:hover {
+  color: #FBDFDB;
+  -webkit-transition: color 450ms;
+  transition: color 450ms;
+}
+
+.menu .filtro input {
+  border: 1px solid rgba(128, 128, 128, 0.541);
+  border-radius: 4px;
+  height: 37px;
+  width: 246px;
+}
+
+.menu .filtro button {
+  width: 91px;
+  height: 37px;
+  background-color: #6558C3;
+  margin-left: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 4px;
+}
+
+.menu .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu .login a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #eec9c4;
+}
+
+.menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 351px 1fr;
+      grid-template-columns: 1fr 2fr 351px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .link {
+  text-decoration: initial;
+  word-spacing: 30px;
+}
+
+.menu .link a {
+  text-decoration: initial;
+  font-size: 16px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+.menu .link a:hover {
+  color: #FBDFDB;
+  -webkit-transition: color 450ms;
+  transition: color 450ms;
+}
+
+.menu .filtro input {
+  border: 1px solid rgba(128, 128, 128, 0.541);
+  border-radius: 4px;
+  height: 37px;
+  width: 246px;
+}
+
+.menu .filtro button {
+  width: 91px;
+  height: 37px;
+  background-color: #6558C3;
+  margin-left: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 4px;
+}
+
+.menu .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu .login a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #eec9c4;
+}
+
+#photos-upload {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+#photos-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#photos-upload p {
+  color: #ada8a8;
+  width: 149px;
+  height: 149px;
+  font-size: 36px;
+  text-transform: uppercase;
+  max-width: 200px;
+  border: 1px solid #DDDDDD;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 3.5px;
+}
+
+#photos-preview {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (150px)[5];
+      grid-template-columns: repeat(5, 150px);
+  width: 100%;
+  margin: 0 5px 9px 8px;
+  grid-gap: 6px;
+}
+
+#photos-preview .photo {
+  position: relative;
+}
+
+#photos-preview img {
+  border-radius: 4px;
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery-form {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 151px 1fr;
+}
+
+.FormPhotos {
+  color: black;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.FormPhotos div:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.photo {
+  position: relative;
+}
+
+.photo i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 400%;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.photo i:hover {
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  opacity: 1;
+}
+
+/*gallery*/
+.gallery {
+  width: 100%;
+}
+
+.gallery-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.gallery-preview img {
+  height: 50px;
+  margin: 0 2px;
+  cursor: pointer;
+  opacity: 0.6;
+  width: 50px;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery-preview img:hover,
+.gallery-preview img.active {
+  opacity: 1;
+}
+
+.highlight > img {
+  width: 100%;
+  height: 280px;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.lightbox-target {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  left: 0;
+  top: -100%;
+  opacity: 0;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+.lightbox-target img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+a.lightbox-close {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  top: -80px;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  width: 940px;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+
+#adm {
+  font-size: 16px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  margin: 38px 0 0 auto;
+  text-decoration: none;
+}
+
+#adm:hover {
+  color: #FBDFDB;
+  -webkit-transition: color 450ms;
+  transition: color 450ms;
+}
+
+.texto1 h1 {
+  max-width: 305px;
+  padding: 117px 575px 0px 60px;
+}
+
+.texto1 p {
+  max-width: 316px;
+  padding: 10px 564px 117px 60px;
+}
+
+.texto1 img {
+  margin: -300px 0 0 624px;
+}
+
+#titulo {
+  text-align: left;
+  width: 940px;
+  margin: 0 auto;
+}
+
+#titulo h2, .tit {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 50px 0 20px;
+}
+
+.sessão2 {
+  max-width: 940px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.receita img {
+  width: 300px;
+  height: 140px;
+  border-radius: 15px;
+}
+
+.info_card {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin: 8px 0 0 0;
+  text-transform: uppercase;
+}
+
+.info_autor {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  margin-top: 2px;
+  color: #9e9d9d;
+}
+
+.subtitulo {
+  width: 940px;
+  margin: 0 auto;
+  padding: 40px 0 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+}
+
+.text p {
+  width: 940px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#Sobrebold {
+  font-weight: 900;
+}
+
+#rc {
+  font-weight: 900;
+}
+
+.space {
+  height: 35px;
+}
+
+.imgPrep {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.sessãoPrep1 {
+  width: 940px;
+  height: 300px;
+  margin: 20PX auto;
+}
+
+.cards {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+.titPrep {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+.conteudo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: left;
+  opacity: 0.7;
+}
+
+.SubTitle {
+  max-width: 940px;
+  margin: 30px auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 28px auto;
+  text-align: left;
+}
+
+.lista {
+  margin-left: 17px;
+  line-height: 28px;
+}
+
+.autor {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+span:hover {
+  color: #fad8d3;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+span {
+  font-family: 'Roboto', sans-serif;
+  padding: 8px;
+  color: gray;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.conteudo.hidden {
+  opacity: 0;
+  visibility: hidden;
+  height: 0px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+/* Administrativo recipes*/
+.receita h1,
+.receita a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.sessão3 {
+  margin: 10px 0 0 230px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.rec {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 172px 1fr;
+      grid-template-columns: 172px 1fr;
+}
+
+.rec img {
+  width: 172px;
+  height: 80px;
+  border-radius: 8.57px;
+}
+
+.info_rec p, .cheflist p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  opacity: 0.8;
+  margin: 2px 0 10px 20px;
+}
+
+.info_rec h5 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin: 0px 0 0px 15px;
+}
+
+.info_rec a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 0 0 18px;
+  color: #6558C3 100%;
+  padding: 1px;
+}
+
+.receitas {
+  max-width: 940px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 30px 230px 30px 230px;
+}
+
+.receitas a {
+  font-family: 'Roboto', sans-serif;
+  margin: 2px 110px 0px 200px;
+  font-size: 16px;
+  padding: 4px;
+  background-color: #6558C3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  width: 120px;
+}
+
+/*adm create */
+.sessão4 {
+  max-width: 940px;
+  margin: auto;
+}
+
+.nmChef, .item div:nth-child(1) {
+  color: black;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin: 30px 0 2px 0;
+}
+
+.item input, .inptChef, select {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 16px;
+  border: 1px solid rgba(128, 128, 128, 0.601);
+  border-radius: 4px;
+  height: 49px;
+  -webkit-box-shadow: 3px 3px 4px -4px black;
+          box-shadow: 3px 3px 4px -4px black;
+  margin-top: 5px;
+}
+
+.item input.info, .inptChef.info, select.info {
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+button.add-preparo,
+button.add-ingredient {
+  color: #6558C3;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 15px 0 0 0;
+  background-color: white;
+}
+
+.submenu button,
+.receitas button {
+  margin-left: auto;
+  font-size: 16px;
+  padding: 4px;
+  background-color: #6558C3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  width: 140px;
+}
+
+#formdelete button[type="submit"] {
+  background-color: #DC4747;
+  margin-left: -265px;
+  font-size: 16px;
+  padding: 4px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  width: 140px;
+  height: 37px;
+}
+
+.submenu {
+  max-width: 940px;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.submenu h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nomeChef {
+  color: black;
+  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.totalRec {
+  color: gray;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.titChef {
+  color: black;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.sessão5 {
+  margin: 0 0 0 230px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 64%;
+  grid-row-gap: 30px;
+}
+
+.rec2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 62px 1fr;
+      grid-template-columns: 62px 1fr;
+}
+
+.rec2 img {
+  border-radius: 100%;
+  background-color: greenyellow;
+  height: 64px;
+  width: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.rec2 h5 {
+  margin: 6px 0 5px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.rec2 a {
+  margin-left: 20px;
+  color: #6558C3 100%;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.link .active {
+  font-weight: bold;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: black;
+  margin-right: 5px;
+  font-size: 1.6em;
+  border-radius: 4px;
+  padding: 2px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.pagination a:hover {
+  font-weight: bold;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.imgChef {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto 0;
+}
+
+.imgChef img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */

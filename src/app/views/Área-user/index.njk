@@ -1,0 +1,42 @@
+{% extends "Área-user/layout.njk" %}
+
+
+    {% block content %}
+    <section class="sessão1">
+
+            <div>
+                <h1>As melhores receitas</h1>
+                <p> Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
+            </div>
+            <div>
+    
+                <img src="chef.png" alt="Chefe">
+            </div>
+
+
+
+        </div>
+
+    </section>
+    <div id="titulo">
+        <h2> Destaques</h2>
+    </div>
+    <section class="sessão2">
+
+{% for receita in receitas %}
+        <div class="receita">
+            <div class="cards">
+               <a href="/preparo/{{receita.id}}"> <img src="{{receita.img}}" alt=" Triplo bacon"></a>
+            </div>
+                    <div class="info_card">
+                        <h5>{{receita.nome}}</h5>
+                    </div>
+                    <div class="info_autor">
+                        <p>{{receita.nome_chef}}</p>
+                    </div>
+        </div>
+{% endfor %}
+
+
+    </section>
+ {% endblock %}

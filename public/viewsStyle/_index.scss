@@ -1,0 +1,33 @@
+.sessão1 {
+    width: 940px;
+    height: 366px;
+    margin: 20PX auto;
+    background-color: #FBDFDB;
+    border-radius: 30px ;
+    display: grid;
+    grid-template-columns: 624px 1fr ;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+
+    div:nth-child(1){
+        margin : 117px 0 0 60px ;
+    }
+
+    div:nth-child(2){
+        margin-top: 66px;
+        }   
+
+    h1{
+        font-size: size('36');
+        margin-bottom: 10px;
+    }
+
+    p{
+        font-size: size('16'); 
+        max-width: 316px;
+        opacity: 0.7;
+        letter-spacing: 0.7px;
+
+
+    }
+}

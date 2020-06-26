@@ -1,0 +1,47 @@
+{% extends "Área-Adm/layout1.njk" %}
+
+{% block content %}
+    <div class="HeaderList">
+        <div>
+            <h1 class="titChef">
+                Chef:
+                {{chef.nome_chef}}</h1>
+        </div>
+        <div>
+        <button class="rec"><a href="/Admin/chefs/{{chef.id}}/edit">Editar Chef</a></button>
+        </div>
+
+    </div>
+    <section class="sessaoPreparo">
+        <div class="imgChef">
+            <img src="" alt="" srcset="">
+            <img src="{{avatar[0].src}}">
+
+        </div>
+    </div>
+    <div class="nomeChef">
+        {{chef.nome_chef}}</div>
+    <div class="totalRec">{{chef.total_rec}} receitas</div>
+</section>
+<h1 class="tit">Receitas</h1>
+
+<section class="listRec">
+    {% for rec in receitas %}
+        <div class="rec">
+            <img src="{{rec.src}}" alt=" ">
+            <div class=" info_rec">
+            <h5>{{rec.nome}}</h5>
+            <p>por
+                {{chef.nome_chef}}
+            </p>
+            <a href="/admin/recipes/{{rec.receitaId}}">
+                Visualizar
+            </a>
+
+        </div>
+    </div>
+{% endfor %}
+
+</section>
+
+{% endblock %}

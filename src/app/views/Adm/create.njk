@@ -1,0 +1,18 @@
+{% extends "Área-Adm/layout1.njk" %}
+
+{% block content %}
+
+<form action="/admin/users" method="post">
+    <section class="HeaderList">
+        <h1>Criar Usuário</h1>
+        <div>
+            <button type="submit">Salvar</button>
+            <button class="exit"><a href="#">Cancelar</a></button>
+        </div>
+    </section>
+
+    {% include 'Adm/fields.njk' %}
+
+</form>
+
+{% endblock content %}

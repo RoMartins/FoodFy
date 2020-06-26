@@ -1,0 +1,38 @@
+{% extends "Área-Adm/layout1.njk" %}
+
+{% block content %}
+
+    <div style="position: absolute; margin-left: 908px">
+        <form id="formdelete" action="/admin/chefs?_method=DELETE" method="POST">
+            <input type="hidden" name="id" value="{{chef.id}}">
+            <button class="delete" type="submit">
+                Deletar
+            </button>
+        </form>
+    </div>
+    <form class="card" action="/admin/chefs?_method=PUT" method="POST" enctype="multipart/form-data">
+        <div class="">
+            <div>
+                <div class="HeaderList">
+                    <h1 class="class">Editando Chef</h1>
+
+                    <button type="submit">Salvar chef </button>
+                </div>
+                <input type="hidden" name="id" value="{{chef.id}}">
+                {% include 'chefs/form.njk' %}
+            </div>
+                <input type="hidden" name="totalRec" value="{{chef.total_rec}}">
+
+        </form>
+<script> 
+    const FormDelete = document.querySelector("#formdelete")
+    FormDelete.addEventListener("submit", (event) =>{
+    const TotalRec = document.querySelector('input[name="totalRec"]')
+        if(TotalRec.value != 0){
+            alert("O Chef não pode ser excluido porque possui receitas cadastradas!")
+        event.preventDefault()
+            }
+    })
+</script>
+
+    {% endblock content %}

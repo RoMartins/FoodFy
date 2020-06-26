@@ -1,0 +1,28 @@
+{% extends "Área-Adm/layout1.njk" %}
+
+{% block content %}
+
+    <div style="position: absolute; margin-left: 908px">
+        <form id="formdelete" action="/admin/recipes?_method=DELETE" method="POST">
+            <input type="hidden" name="id" value="{{receita.id}}">
+            <button class="delete" type="submit">
+                Deletar
+            </button>
+        </form>
+    </div>
+    <form class="card" action="/admin/recipes?_method=PUT" method="POST" enctype="multipart/form-data">
+        <div class="">
+            <div>
+                <div class="HeaderList">
+                    <h1 class="class">Editando receita</h1>
+
+                    <button type="submit">Salvar</button>
+                </div>
+                <input type="hidden" name="id" value="{{receita.id}}">
+                {% include 'Área-Adm/form.njk' %}
+            </div>
+
+        </form>
+
+
+    {% endblock content %}

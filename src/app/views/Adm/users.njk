@@ -1,0 +1,38 @@
+{% extends "Área-Adm/layout1.njk" %}
+
+{% block content %}
+
+ <div class="HeaderList">
+        <div>
+            <h1>Usuários</h1>
+        </div>
+        <div>
+            <button><a href="/admin/users/create">Novo</a></button>
+        </div>
+
+    </div>
+
+    <div class="list">
+      
+      {% for user in users %}
+         <div class="item">
+            <div>{{user.name}}</div>
+            <div>{{user.email}}</div>
+            <div class="links">
+                
+                <a class="editar" href="/admin/users/{{user.id}}/edit">Editar</a>
+                <form id="formdeletee" action="/admin/users?_method=DELETE" method="POST">
+                    <input type="hidden" name="id" value="{{user.id}}">
+                    <button class="remove" type="submit">
+                        Remover
+                    </button>
+                </form>    
+            </div>
+        </div>
+      {% endfor %}
+
+    </div>
+
+
+
+{% endblock content %}

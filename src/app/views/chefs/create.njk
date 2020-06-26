@@ -1,0 +1,16 @@
+{% extends "Área-Adm/layout1.njk" %}
+
+{% block content %}
+
+ <form class="card" method ="POST" action ="/admin/chefs" enctype="multipart/form-data">
+
+<div class="HeaderList">
+    <div ><h1 class=>Cadastrando Chef</h1> </div>
+    <div><button type="submit">Salvar Chef</button> </div>
+</div>
+
+            {% include 'chefs/form.njk' %}
+
+</form>
+
+{% endblock content %}

@@ -1,0 +1,28 @@
+<section class="profile">
+    
+    <div class="form">
+        <div class="item">
+            <div>Nome</div>
+            <div class="input">
+                <input type="text" name="name" 
+                value="{{user.name}}"
+                placeholder="Digite o nome completo">
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Email</div>
+            <div class="input">
+                <input type="text" name="email"
+                 value="{{user.email}}"
+                 placeholder="Digite o email">
+            </div>
+        </div>
+
+        <div class="check">
+            <div class="checkbox">
+                <input type="checkbox" name="adm"  {% if user.is_adm == true %} checked
+        {% endif %}>
+            <div>Administrador</div>
+        </div>
+    </section>    

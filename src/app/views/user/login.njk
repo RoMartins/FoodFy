@@ -1,0 +1,42 @@
+{% extends "session/header.njk" %}
+
+{% block content %}
+
+<section class="LoginForm">
+    <h2>Iniciar Sessão</h2>
+        <form action="/login" method="POST"  >
+
+    <div class="form">
+
+             <div class="item">
+            <div>Email</div>
+            <div class="input">
+                <input type="text" name="email" 
+                value="{{user.email}}"
+            placeholder="Digite seu email" >
+
+            </div>
+        </div>
+
+        <div class="item">
+        <div>Senha</div>
+        <div class="inputPRO">
+            <input type="password" 
+            name="password" 
+            placeholder="Digite sua senha " >
+
+        </div>
+    
+    </div>
+
+    <div class="form2">
+        <a href="/forgot-password">Perdeu a senha?</a>
+        <button type="submit">Acessar</button>
+
+    </div>        
+
+        </form>
+
+</section>
+
+{% endblock content %}

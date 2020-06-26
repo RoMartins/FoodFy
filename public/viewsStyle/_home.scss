@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+header {
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 28px;
+ 
+   
+}
+
+
+  #adm {
+    font-size: 16px;
+    color: black;
+   font-family: 'Roboto', sans-serif;
+   font-weight:    normal ;
+     margin: 38px 0 0 auto;
+     text-decoration: none;
+
+ }
+
+ #adm:hover {
+     
+    color: #FBDFDB;
+    transition: color 450ms;}
+
+
+ 
+
+ .texto1 h1 {
+    max-width: 305px ;
+    padding: 117px 575px 0px 60px;
+
+ }
+ .texto1 p {
+     
+     max-width: 316px;
+     padding: 10px 564px 117px 60px;
+ }
+
+ .texto1 img {
+     margin: -300px 0 0 624px;
+     
+ }
+#titulo {
+  
+    text-align: left;
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+#titulo h2 , .tit {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 50px 0 20px;
+}
+  .sessão2 {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 20px;
+
+ }
+
+ .receita img {
+    width: 300px;
+    height: 140px;
+     border-radius: 15px;
+ }
+
+ .info_card{
+    font-family: 'Roboto', sans-serif; 
+     font-size: 18px;
+     margin: 8px 0 0 0;
+     text-transform: uppercase;
+ }
+
+ .info_autor  {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 12px;
+    margin-top: 2px;
+    color: rgb(158, 157, 157);
+ }
+
+ .subtitulo {
+     width: 940px;
+     margin: 0 auto;
+     padding: 40px 0 20px;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 24px;
+
+ }
+
+ .text p {
+     width: 940px;
+     margin: 0 auto;
+     font-size: 16px;
+     font-family: 'Open Sans', sans-serif;
+ }
+
+ #Sobrebold {
+     font-weight: 900;
+ }
+
+ #rc {
+    font-weight: 900;
+}
+
+.space {
+    height: 35px;
+}
+
+
+
+.imgPrep {
+width: 100%;
+height: 100%;
+border-radius: 30px;
+
+}
+
+.sessãoPrep1 {
+    width: 940px;
+    height: 300px;
+    margin: 20PX auto;
+  
+    
+}
+
+.cards {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 8px;
+    text-align: left;
+
+}
+
+.titPrep {
+     font-family: 'Roboto', sans-serif;
+
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+
+.conteudo {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: left;
+    opacity: 0.7;
+
+
+}
+
+.SubTitle {
+    max-width: 940px;
+    margin: 30px auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 28px auto;
+    text-align: left;
+}
+
+.lista {
+    margin-left: 17px;
+    line-height: 28px;
+}
+ .autor
+{
+ text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    opacity: 0.8;
+ }
+
+span:hover {
+    color: rgb(250, 216, 211);
+    transition: 500ms;
+}
+ span {
+    font-family: 'Roboto', sans-serif;
+     padding: 8px;
+     color: gray;
+     font-size: 10px;
+     line-height: 10px;
+
+ }
+
+ .conteudo.hidden {
+     opacity: 0;
+     visibility: hidden;
+     height: 0px;
+     transition: 500ms;
+
+ }
+
+ /* Administrativo recipes*/
+
+ 
+
+ 
+
+ .receita h1,
+    .receita a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+
+ }
+
+ .sessão3 {
+    margin: 10px 0 0 230px;
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    grid-gap: 20px;
+
+ }
+
+ .rec {
+    display: grid;
+    grid-template-columns: 172px 1fr;
+ }
+ 
+ .rec img {
+     width: 172px;
+     height: 80px;
+    border-radius: 8.57px;
+
+ }
+
+ .info_rec p , .cheflist p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    opacity: 0.8;
+    margin: 2px 0 10px 20px;
+}
+
+.info_rec h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0px 0 0px 15px;
+}
+
+.info_rec a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 0 0 18px;
+    color: #6558C3 100%;
+    padding: 1px;
+
+}
+
+
+.receitas {
+    max-width: 940px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 230px 30px 230px;
+    
+}

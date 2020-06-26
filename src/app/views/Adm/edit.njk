@@ -1,0 +1,28 @@
+{% extends "Área-Adm/layout1.njk" %}
+
+{% block content %}
+
+    <div style="position: absolute; margin-left: 640px">
+        <form id="formdelete" action="/admin/users?_method=DELETE" method="POST">
+            <input type="hidden" name="id" value="{{user.id}}">
+            <button class="delete" type="submit">
+                Deletar
+            </button>
+        </form>
+    </div>
+    <form class="card" action="/admin/users?_method=PUT" method="POST">
+        <div class="">
+            <div>
+                <div class="submenu">
+                    <h1>Atualizar Usuário</h1>
+
+                    <button type="submit">Salvar</button>
+                </div>
+                <input type="hidden" name="id" value="{{user.id}}">
+                {% include 'Adm/fields.njk' %}
+            </div>
+
+        </form>
+
+
+    {% endblock content %}

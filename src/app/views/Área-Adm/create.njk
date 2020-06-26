@@ -1,0 +1,17 @@
+{% extends "Área-Adm/layout1.njk" %}
+
+{% block content %}
+
+ <form class="card" method ="POST" action ="/admin/recipes" enctype="multipart/form-data">
+
+<div class="HeaderList">
+    <div ><h1 class=>Criando receita</h1> </div>
+    <div><button type="submit">Salvar receita</button></div>
+</div>
+
+            {% include 'Área-Adm/form.njk' %}
+
+</form>
+
+
+{% endblock content %}

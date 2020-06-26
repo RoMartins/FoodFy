@@ -1,0 +1,35 @@
+{% extends "Área-Adm/layout1.njk" %}
+
+{% block content %}
+    <div class="HeaderList">
+        <div>
+            <h1 class>Gerenciar receitas</h1>
+        </div>
+        <div >
+            <button class="rec"><a href="/Admin/create">Nova receita</a></button>
+        </div>
+
+    </div>
+
+    <section class="listRec">
+        {% for rec in receitas %}
+
+            <div class="rec">
+                <img src="{{rec.img}}" alt=" Triplo bacon">
+                <div class="info_rec">
+                    <h5>{{rec.nome}}</h5>
+                    <p>
+                        por
+                        {{rec.nome_chef}}</p>
+                    <a href="/admin/recipes/{{rec.id}}">
+                        Visualizar
+                    </a>
+
+                </div>
+            </div>
+
+        {% endfor %}
+
+    </section>
+
+{% endblock content %}

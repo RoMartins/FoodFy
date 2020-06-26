@@ -1,0 +1,90 @@
+
+section{
+    font-family:Helvetica; 
+    @include Container;    
+    &.profile{
+        .home{
+            @include flexCenter(row);
+            justify-content: space-between;
+            margin: 55px 0 55px 0 ;
+            
+            div:nth-child(1){
+            @include flexCenter(row);
+            font-weight: weight(bold);
+            font-size: size('24');
+
+            }
+            h2{
+                
+                font-size: size('12');
+                margin-left: 8px;;
+                text-transform: uppercase;
+                color: $primary-color;
+
+            }
+                
+            button{
+               @include ButtonCustom;
+            }
+        }
+     
+        .form{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+
+            .item{
+                .inputPRO{
+                    input{
+
+                        height: 49px;
+                    }
+                }
+            
+            }
+
+            .check{
+                .checkbox{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    
+                    div:nth-child(2){
+
+                    font-size: size('16');
+                    margin-left: 5px;
+                    font-weight: weight(bold);
+
+                    }
+
+                }
+            }
+
+        }    
+
+    }
+
+
+
+
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0 0 0 ;
+    
+    input{
+        height: 16px;
+        width: 30px;
+    }
+    div:nth-child(2){
+
+    font-size: size('16');
+    margin-left: 5px;
+    font-weight: weight(bold);
+
+    }
+
+}

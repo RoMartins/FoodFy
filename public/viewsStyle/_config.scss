@@ -1,0 +1,210 @@
+.receitas a  {
+    font-family: 'Roboto', sans-serif;
+    margin: 2px 110px 0px 200px;
+    font-size: 16px;
+    padding: 4px ;
+    background-color:  #6558C3;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    width: 120px;
+
+}
+
+/*adm create */
+
+.sessão4 {
+    max-width: 940px;
+    margin: auto;
+}
+
+.nmChef, .item div:nth-child(1) {
+    color: black;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 30px 0 2px 0;
+    
+
+}
+
+.item input, .inptChef, select  {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 16px;
+    border: 1px solid rgba(128, 128, 128, 0.601);
+    border-radius: 4px;
+    height: 49px;    
+    box-shadow: 3px 3px 4px -4px black;
+    margin-top: 5px;
+        &.info{
+            height: 200px;
+            margin-bottom: 30px;
+        }
+}
+
+button.add-preparo,
+    button.add-ingredient {
+    color:#6558C3 ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+  margin: 15px 0 0 0  ;
+  background-color: white;
+}
+
+
+
+.submenu button, 
+    .receitas button{
+    margin-left: auto;
+    font-size: 16px;
+    padding: 4px ;
+    background-color:  #6558C3;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: 140px;
+}
+
+#formdelete button[type="submit"]{
+    background-color: #DC4747;
+    margin-left: -265px;
+    font-size: 16px;
+    padding: 4px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: 140px;
+    height: 37px;
+}
+
+.submenu {
+    max-width: 940px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+         h1{
+             font-size: size('24');
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+
+         }
+}
+
+
+
+
+
+
+
+.nomeChef {
+    color: black;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+.totalRec {
+    color: gray;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 4px;
+    text-align: center;
+}
+
+
+.titChef {
+    color: black;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    
+}
+
+.sessão5 {
+    margin: 0 0 0 230px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 64%;
+    grid-row-gap: 30px;
+
+}
+
+.rec2 {
+    display: grid;
+    grid-template-columns: 62px 1fr;
+ }
+
+ .rec2 img {
+     border-radius: 100%;
+     background-color: greenyellow;
+     height: 64px;
+     width: 64px;
+     object-fit: cover;
+ }
+
+ .rec2 h5 {
+    margin: 6px 0 5px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+
+ }
+
+.rec2 a {
+margin-left: 20px ;
+color: #6558C3 100%;
+text-decoration: none;
+font-size: 12px;
+font-weight: bold; 
+font-family: 'Roboto', sans-serif;
+
+}
+
+.link .active{
+    font-weight: bold;
+}
+
+
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: black;
+    margin-right: 5px;
+    font-size: size('16');
+    border-radius: 4px;
+    padding: 2px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .pagination a:hover {
+    font-weight: bold;
+    transition: 200ms; 
+}
+
+.imgChef {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto 0;
+}
+.imgChef img {
+
+position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;}
+

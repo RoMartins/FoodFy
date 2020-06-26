@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodfy</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<header>
+    <div class="menu">
+        <div class="logo">
+           <a href="/"><img src="/logo.png"></a>
+        </div>
+    
+        <div class="link">
+            <a  href="/Sobre">Sobre</a>
+           
+            <a  href="/receitas">Receitas</a>
+
+            <a href="/chefs">
+                    Chefs</a>
+        </div>
+
+        <div class="filtro">
+         <form action="/receitas" method="GET">
+                <input 
+                    type="text"
+                    name="filter"
+                    placeholder="Buscar uma receita"
+                    value = {{filter}}
+                >
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <div class="login">
+            {% if session.userId %}
+            <a href="/login">MINHA CONTA</a>
+            {%else%}
+            <a href="/login">LOGIN</a>
+            {% endif %}
+        </div>
+</div>
+   
+
+</header>
+        {%include "parts/messages.njk"%}
+
+    {% block content %}
+
+    {% endblock%}
+</body>
+<script src="/scripts.js"></script>
+</html>

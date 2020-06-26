@@ -1,0 +1,119 @@
+<section class="sessão4">
+
+    <div class="FormPhotos">
+        <div>Adicione Fotos</div>
+        <div class="gallery-form">
+            <div id="photos-upload">
+                <input id="photos-input" type="file" name="photos"  onchange="PhotosUpload.PhotosInput(event)" multiple="multiple" accept="image/*" 
+               >
+                <p class="P_foto">
+                    +
+                </p>
+            </div>
+
+            <div id="photos-preview">
+                {% if files %}
+                    {% for image in files %}
+                        <div class="photo" id="{{image.file_id}}">
+                            <img src="{{image.src}}" alt="{{image.name}}">
+                            <i class="material-icons" onclick="PhotosUpload.removeOldPhoto(event)">close</i>
+                        </div>
+                    {% endfor %}
+                    <input type="hidden" name="removed_files">
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+
+    {% if user %}
+     <div class="check">
+            <div class="checkbox">
+                <input type="checkbox" name="destaque"  {% if receita.destaque == true %} checked
+        {% endif %}>
+            <div>Destaque</div>
+        </div>
+    </div>
+
+
+    {% endif %}
+
+    <div class="item ">
+        <div>Nome da receita</div>
+        <div>
+            <input type="text" name="nome" value="{{receita.nome}}">
+        </div>
+    </div>
+    <div class="item ">
+        <div>Chef</div>
+        <div>
+            <select name="chef">
+                {% for chef in options %}
+                    <option value="{{chef.id}}" placeholder="Selecione um Chef" {% if receita.chef_id == chef.id %} selected {% endif %}>
+                        {{chef.nome_chef}}
+                    </option>
+                {% endfor %}
+
+            </select>
+        </div>
+    </div>
+
+    <div class="item ingredientes">
+        <div>Ingredientes</div>
+        <div class="ingredient">
+            <input type="text" name="ingredientes[]" value="{{receita.ingredientes}}">
+        </div>
+    </div>
+    <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
+
+    <div class="item preparos">
+        <div>Preparo</div>
+        <div class="preparo">
+            <input type="text" name="preparo[]" value="{{receita.preparo}}">
+        </div>
+    </div>
+    <button type="button" class="add-preparo">Adicionar novo passo</button>
+
+    <div class="item">
+        <div>Informações adicionais</div>
+        <div>
+            <input class="info" type="text" name="informacoes" value="{{receita.informacoes}}">
+        </div>
+
+    </div>
+
+    
+
+<script>
+/* adicionando input */
+
+
+const buttonAdd = document.querySelector(".add-ingredient")
+buttonAdd.addEventListener("click", ()=> {
+  const item = document.querySelector(".ingredientes")
+  const input = document.querySelectorAll(".ingredient")
+
+  const newInput = input[input.length -1].cloneNode(true)
+  if (newInput.children[0].value == "") return false;
+
+  newInput.children[0].value = ""
+  item.appendChild(newInput);
+});
+
+
+const buttonAd = document.querySelector(".add-preparo")
+buttonAd.addEventListener("click", ()=> {
+  const ite = document.querySelector(".preparos")
+  const ipt = document.querySelectorAll(".preparo")
+
+  const newIpt = ipt[ipt.length -1].cloneNode(true)
+  if (newIpt.children[0].value == "") return false;
+
+  newIpt.children[0].value = ""
+
+  ite.appendChild(newIpt);
+});
+  
+</script>
+</section>
+
