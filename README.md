@@ -26,9 +26,11 @@ Siga os seguintespassos :
 
     1. Crie uma pasta para o app na sua máquina.
     
-    2. Execute npm init para criar a pasta node_modules
+    2. Baixe o aplicativo executando git clone https://github.com/RoMartins/FoodFy.git
     
-    3. Baixe o aplicativo executando git clone https://github.com/RoMartins/FoodFy.git
+    
+    3. Execute npm init para criar a pasta node_modules
+    
     
     4. Execute npm start para iniciar o servidor.
   
